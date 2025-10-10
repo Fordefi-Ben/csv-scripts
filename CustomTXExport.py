@@ -6,7 +6,7 @@ import sys
 
 # Configuration
 API_BASE_URL = "https://api.fordefi.com/api/v1"
-API_TOKEN = "eyJhbGciOiJFZERTQSIsImtpZCI6ImZ3MFc3aVpocUc0SUEzaXV4ZmhQIiwidHlwIjoiSldUIn0.eyJpc3MiOiJodHRwczovL2FwaS5mb3JkZWZpLmNvbS8iLCJzdWIiOiI2YTlhMTIxZi01YmZiLTRjZWYtYmY3Mi01NWJjMGNiYzQ4MDVAZm9yZGVmaSIsImF1ZCI6WyJodHRwczovL2FwaS5mb3JkZWZpLmNvbS9hcGkvIl0sImV4cCI6MjA3NTQ3MTQwOCwiaWF0IjoxNzYwMTExNDA4LCJqdGkiOiIzODA2YmJiYi0xZDE3LTRmOWMtYjA4Mi03ODBkZWJlMWM2NTQifQ.HNZ4a5IRl9xt6GnRdwLOHBaZnoOJXs2ISmq8CRduS3fztx7qeCDWM7ls3yg4FKjIBMuMZmjX33WBfAULpG_1CA"  # Replace with your actual API token
+API_TOKEN = "{TOKEN HERE}"  # Replace with your actual API token
 
 def get_transactions(page: int = 1, size: int = 50) -> Dict[str, Any]:
     """

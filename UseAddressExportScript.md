@@ -34,21 +34,15 @@ If Python is not installed, download it from [python.org](https://www.python.org
 ## Generate Fordefi API Keys
 
 ### Step 1: Log into Fordefi
-1. Go to [app.fordefi.com](https://app.fordefi.com) (or your organization's Fordefi URL)
+1. Go to [app.fordefi.com](https://app.fordefi.com) 
 2. Sign in with your credentials
 
 ### Step 2: Navigate to API Users
-1. Click on **Settings** (gear icon) in the left sidebar
+1. Click on **User Management**  in the left sidebar
 2. Select **API Users** from the settings menu
 
 ### Step 3: Create a New API User
-1. Click **+ Create API User** button
-2. Fill in the details:
-   - **Name**: Give it a descriptive name (e.g., "Vault Export Script")
-   - **Role**: Select **Viewer** (this gives read-only access)
-   - **Description**: (Optional) "Used for exporting vault addresses to CSV"
-
-3. Click **Create**
+1. Full steps [here](https://docs.fordefi.com/developers/getting-started/create-an-api-user)
 
 ### Step 4: Generate and Save the API Key
 1. After creating the API user, you'll see a modal with the API credentials
@@ -69,7 +63,6 @@ If you have multiple Fordefi organizations:
 
 ### Step 1: Create a Project Folder
 ```bash
-# Create a new folder for the script
 mkdir fordefi-vault-export
 cd fordefi-vault-export
 ```
@@ -208,8 +201,7 @@ Some vaults may have multiple addresses:
 ### Blank Addresses
 Some vault types may have blank addresses if:
 - The vault hasn't been set up yet
-- The vault type doesn't support addresses (e.g., some black_box vaults)
-- The API doesn't expose addresses for that vault type
+- The vault type doesn't support addresses (e.g., black_box vaults)
 
 ---
 
